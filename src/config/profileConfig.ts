@@ -18,7 +18,7 @@ export const profileConfig: ProfileConfig = withUserConfig("profile", {
 		{
       		name: "GitHub",
       		icon: "fa6-brands:github",
-      		url: "https://github.com/somebodyX-bot",
+			url: "https://github.com/somebodyX-qwq",
     	},
 		{
 			name: "Email",
