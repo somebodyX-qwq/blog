@@ -2,7 +2,7 @@
 title: "树链剖分"
 published: 2025-04-23
 tags: ["树论", "算法"]
-category: "树论"
+category: "算法"
 draft: false
 ---
 

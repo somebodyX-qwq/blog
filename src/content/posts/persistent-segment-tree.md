@@ -2,7 +2,7 @@
 title: "可持久化线段树"
 published: 2025-04-23
 tags: ["数据结构", "算法"]
-category: "数据结构"
+category: "算法"
 draft: false
 ---
 

@@ -1,48 +1,53 @@
 import type { TrackDescriptor } from "@/types/musicConfig";
+import { siteConfig } from "../config/siteConfig.ts";
 
-/**
- * 侧栏音乐本地曲目数据源。
- * 遵循「零额外负担」原则：配置与数据解耦，此处专用于管理本地曲目列表。
- *
- * 添加曲目：在 musicTracks 中追加一项即可：
- * - id: 唯一标识
- * - title: 曲目标题
- * - artist: 艺术家（可选）
- * - cover: 封面图地址（可选；推荐相对 /src，亦支持 /public 或绝对 URL）
- * - source: 音频文件地址（相对 /public 或绝对 URL）
- * - duration: 曲目时长（秒，可选）
- */
+// 音频 URL 必须包含站点部署前缀，兼容 /blog/ 和根目录部署。
+const musicBase =
+	`/${(siteConfig.base ?? "/").replace(/^\/+|\/+$/g, "")}/assets/music`.replace(
+		/\/+/g,
+		"/",
+	);
+
+/** 本地曲目：音频位于 public/assets/music，封面路径相对 src，时长单位为秒。 */
 export const musicTracks: readonly TrackDescriptor[] = [
 	{
-		id: "dazbee",
-		title: "口笛で愛は歌えない",
-		artist: "Dazbee",
-		cover: "assets/images/music/dazbee.webp",
-		source: "/assets/music/url/dazbee.mp3",
-		duration: 241,
+		id: "mygo-1",
+		title: "壱雫空",
+		artist: "MyGO!!!!!",
+		cover: "assets/images/music/mygo-1.jpg",
+		source: `${musicBase}/mygo-1.flac`,
+		duration: 192,
 	},
 	{
-		id: "hitori",
-		title: "ひとり上手",
-		artist: "Kaya",
-		cover: "assets/images/music/hitori.webp",
-		source: "/assets/music/url/hitori.mp3",
-		duration: 253,
+		id: "mygo-2",
+		title: "影色舞",
+		artist: "MyGO!!!!!",
+		cover: "assets/images/music/mygo-2.jpg",
+		source: `${musicBase}/mygo-2.flac`,
+		duration: 212,
 	},
 	{
-		id: "xryx",
-		title: "眩耀夜行",
-		artist: "スリーズブーケ",
-		cover: "assets/images/music/xryx.webp",
-		source: "/assets/music/url/xryx.mp3",
+		id: "mygo-3",
+		title: "春日影 (MyGO!!!!! ver.)",
+		artist: "MyGO!!!!!",
+		cover: "assets/images/music/mygo-3.jpg",
+		source: `${musicBase}/mygo-3.flac`,
+		duration: 258,
+	},
+	{
+		id: "mygo-4",
+		title: "焚音打",
+		artist: "MyGO!!!!!",
+		cover: "assets/images/music/mygo-4.jpg",
+		source: `${musicBase}/mygo-4.flac`,
 		duration: 245,
 	},
 	{
-		id: "cl",
-		title: "春雷の頃",
-		artist: "22/7",
-		cover: "assets/images/music/cl.webp",
-		source: "/assets/music/url/cl.mp3",
-		duration: 242,
+		id: "mygo-5",
+		title: "迷星叫",
+		artist: "MyGO!!!!!",
+		cover: "assets/images/music/mygo-5.jpg",
+		source: `${musicBase}/mygo-5.flac`,
+		duration: 211,
 	},
 ];

@@ -28,6 +28,7 @@ export const sidebarConfig: SidebarConfig = withUserConfig("sidebar", {
 	side: "left",
 	components: [
 		{ type: "profile", enable: true, slot: "top" },
+		{ type: "music", enable: true, slot: "top" },
 		{
 			type: "tags",
 			enable: true,

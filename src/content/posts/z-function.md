@@ -2,7 +2,7 @@
 title: "Z 函数"
 published: 2025-04-23
 tags: ["字符串", "算法"]
-category: "字符串"
+category: "算法"
 draft: false
 ---
 
