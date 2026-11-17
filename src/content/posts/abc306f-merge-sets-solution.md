@@ -5,7 +5,7 @@ publishedAt: 2023-06-18T10:02:00+08:00
 description: ''
 image: ''
 tags: ["题解", "算法"]
-category: "题解"
+category: "算法"
 draft: false
 lang: ''
 ---
@@ -37,7 +37,7 @@ lang: ''
 
 ## 代码
 
-\`\`\`cpp
+```cpp
 #include<bits/stdc++.h>
 #define lowbit(x) (x&(-(x)))
 using namespace std;
@@ -83,4 +83,4 @@ int main()
     cout<<ans;
     return 0;
 }
-\`\`\`
+```

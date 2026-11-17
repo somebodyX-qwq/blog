@@ -2,7 +2,7 @@
 title: "背包"
 published: 2025-04-23
 tags: ["DP", "算法"]
-category: "DP"
+category: "算法"
 draft: false
 ---
 

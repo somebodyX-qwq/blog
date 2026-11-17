@@ -2,7 +2,7 @@
 title: "多项式科技"
 published: 2025-04-23
 tags: ["数论", "算法"]
-category: "数论"
+category: "算法"
 draft: false
 ---
 

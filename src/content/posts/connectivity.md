@@ -2,7 +2,7 @@
 title: "连通性相关"
 published: 2025-04-23
 tags: ["图论", "算法"]
-category: "图论"
+category: "算法"
 draft: false
 ---
 
