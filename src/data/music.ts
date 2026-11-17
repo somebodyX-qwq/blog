@@ -1,3 +1,4 @@
+import { siteConfig } from "@/config/siteConfig";
 import type { TrackDescriptor } from "@/types/musicConfig";
 import { siteConfig } from "../config/siteConfig.ts";
 
